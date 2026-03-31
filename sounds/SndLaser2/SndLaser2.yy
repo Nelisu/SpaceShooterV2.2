@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"SndLaser2",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.2005669,
+  "exportDir":"",
+  "name":"SndLaser2",
+  "parent":{
+    "name":"Sfx",
+    "path":"folders/Sons/Sfx.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SndLaser2.ogg",
+  "volume":1.0,
+}

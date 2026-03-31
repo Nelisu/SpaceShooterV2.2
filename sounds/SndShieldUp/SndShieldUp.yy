@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"SndShieldUp",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.29315192,
+  "exportDir":"",
+  "name":"SndShieldUp",
+  "parent":{
+    "name":"Sfx",
+    "path":"folders/Sons/Sfx.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"SndShieldUp.ogg",
+  "volume":1.0,
+}
