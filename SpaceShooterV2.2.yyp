@@ -12,6 +12,7 @@
   "Folders":[
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sons","folderPath":"folders/Sons.yy","name":"Sons","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Musica","folderPath":"folders/Sons/Musica.yy","name":"Musica","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -34,7 +35,9 @@
   },
   "name":"SpaceShooterV2.2",
   "resources":[
+    {"id":{"name":"ObjEscudo","path":"objects/ObjEscudo/ObjEscudo.yy",},},
     {"id":{"name":"ObjPlayer","path":"objects/ObjPlayer/ObjPlayer.yy",},},
+    {"id":{"name":"ObjTiroPlayer","path":"objects/ObjTiroPlayer/ObjTiroPlayer.yy",},},
     {"id":{"name":"RmGame","path":"rooms/RmGame/RmGame.yy",},},
     {"id":{"name":"SndAggressor","path":"sounds/SndAggressor/SndAggressor.yy",},},
     {"id":{"name":"SndDarkling","path":"sounds/SndDarkling/SndDarkling.yy",},},
@@ -57,6 +60,8 @@
     {"id":{"name":"SprBotaoTexto","path":"sprites/SprBotaoTexto/SprBotaoTexto.yy",},},
     {"id":{"name":"SprEscudo","path":"sprites/SprEscudo/SprEscudo.yy",},},
     {"id":{"name":"SprEscudoGui","path":"sprites/SprEscudoGui/SprEscudoGui.yy",},},
+    {"id":{"name":"SprGlowTiro","path":"sprites/SprGlowTiro/SprGlowTiro.yy",},},
+    {"id":{"name":"SprGlowTiro1","path":"sprites/SprGlowTiro1/SprGlowTiro1.yy",},},
     {"id":{"name":"SprInimigo1","path":"sprites/SprInimigo1/SprInimigo1.yy",},},
     {"id":{"name":"SprInimigo2","path":"sprites/SprInimigo2/SprInimigo2.yy",},},
     {"id":{"name":"SprInimigo3","path":"sprites/SprInimigo3/SprInimigo3.yy",},},
