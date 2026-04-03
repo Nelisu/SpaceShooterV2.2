@@ -30,8 +30,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Tiros",
-    "path":"folders/Sprites/Inimigos/Tiros.yy",
+    "name":"Outline",
+    "path":"folders/Sprites/Inimigos/Tiros/Outline.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -22,7 +22,19 @@ if _Shield and !instance_exists(ObjEscudo){
    var _Escudo = instance_create_layer(x, y, layer, ObjEscudo);
 }
 if _Shoot and alarm[1] == -1{
-    var _Shot = instance_create_layer(x, y, layer, ObjTiroPlayer);
+    switch (LevelTiro){
+    	case 1:
+            Tiro1();
+            break;
+        
+        case 2:
+            Tiro2();
+            break;
+        
+        case 3:
+            Tiro3();
+            break;
+    }
     alarm[1] = game_get_speed(gamespeed_fps)/2;
 }
 
@@ -30,3 +42,9 @@ x += Velh;
 x = clamp(x, sprite_width/2, room_width - sprite_width/2);
 y += Velv;
 y = clamp(y, sprite_height/2, room_height - sprite_height/2);
+
+if mouse_check_button_pressed(mb_left){
+    LevelTiro ++;
+    LevelTiro %= 4;
+    LevelTiro = clamp(LevelTiro, 1, 3);
+}
