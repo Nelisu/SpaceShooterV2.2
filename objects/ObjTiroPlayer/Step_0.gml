@@ -24,10 +24,9 @@ else if Mode == 2{
 var _Enemy = instance_place(x, y, ObjInimigoPai);
 if _Enemy{
     with(_Enemy){
-        Vida -= 1;
+        PerdeVida();
         Morte();
     }
-    var _Vfx = instance_create_layer(x, y, "Vfx", ObjVfx);
-    _Vfx.sprite_index = SprTiroExplosao;
+    CreateVfx(SprTiroExplosao);
     instance_destroy();
 }

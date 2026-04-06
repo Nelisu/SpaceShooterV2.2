@@ -1,0 +1,1 @@
+draw_sprite_ext(Sprites[Tipo], 0, x, y, Scale, Scale, 0, c_white, Alpha);

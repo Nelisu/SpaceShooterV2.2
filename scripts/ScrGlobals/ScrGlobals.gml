@@ -8,3 +8,8 @@ enum Modos{
     Ataque,
     Sair
 }
+
+enum TiposPowerUp{
+    Tiro,
+    Vida,
+}

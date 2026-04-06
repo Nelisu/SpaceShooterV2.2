@@ -5,11 +5,11 @@ Modo = Modos.Spawn;
 Speed = 10;
 Velv = 0;
 Velh = 0;
+DefineEscala();
 
 Morte = function(){
     if Vida <= 0{
-        var _Vfx = instance_create_layer(x, y, "Vfx", ObjVfx);
-        _Vfx.sprite_index = SprInimigoExplosao;
+        CreateVfx(SprInimigoExplosao);
         audio_play_sound(SndExplosion, 1, false);
         if instance_exists(ObjControl){
             with(ObjControl){
@@ -19,6 +19,12 @@ Morte = function(){
                 }
             }
         }
+        var _Chance = random(99);
+        if _Chance < 20{
+            instance_create_layer(x, y, "Tiros", ObjPowerUp);
+        }
+        
+        ScreenShake(10);
         instance_destroy();
     }
 }
@@ -35,4 +41,10 @@ OutOfBounds = function(){
     }
     //show_message("Teste")
     instance_destroy();
+}
+
+PerdeVida = function(_Dano = 1){
+    Vida -= _Dano;
+    image_xscale = 1.4;
+    image_yscale = .6;
 }

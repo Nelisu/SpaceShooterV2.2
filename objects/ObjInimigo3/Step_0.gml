@@ -31,3 +31,5 @@ switch (Modo){
         }
         break;
 }
+
+event_inherited();

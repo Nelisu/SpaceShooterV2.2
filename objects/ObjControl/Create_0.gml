@@ -1,5 +1,14 @@
 randomize();
 
+if !audio_is_playing(SndFullOn){
+    audio_play_sound(SndFullOn, 100, 1);
+}
+
+Waves = [SqInimigo1Arco, SqInimigo1ArcoB];
+WaveIndex = 0;
+Sequence = 0;
+alarm[1] = game_get_speed(gamespeed_fps) * 2;
+
 Filhos = [];
 CheckChildren = function(){
     for (var i = 0; i < array_length(Filhos); i++){
