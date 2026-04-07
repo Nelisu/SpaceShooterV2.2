@@ -1,3 +1,5 @@
+if global.Hitstop exit;
+
 if mouse_check_button_pressed(mb_left){
     SpawnEnemy1();
 }
@@ -5,13 +7,28 @@ if mouse_check_button_pressed(mb_right){
     SpawnEnemy3();
 }
 
-//show_debug_message(layer_sequence_is_finished(Sequence))
-//var _Index = WaveIndex == 0 ? array_length(Waves) - 1 : WaveIndex - 1;
-if layer_sequence_is_finished(Sequence) and alarm[1] == -1{
+if layer_sequence_is_finished(Sequence) and Alarm1 <= 0{
     layer_sequence_destroy(Sequence);
-    alarm [1] = game_get_speed(gamespeed_fps) * random_range(1.8, 2.1);
+    Alarm1 = Alarm1Time * random_range(1.8, 2.1);
 }
 
-if !instance_exists(ObjPlayer) and alarm[10] == -1 and !global.Transicao{
-    alarm[10] = game_get_speed(gamespeed_fps);
+if Alarm1 > 0{
+    Alarm1--;
+}
+else if !layer_sequence_exists("Sequences", Sequence){
+    Sequence = layer_sequence_create("Sequences", 0, 0, Waves[WaveIndex]);
+    WaveIndex ++;
+    WaveIndex %= array_length(Waves);
+}
+
+if !instance_exists(ObjPlayer) and !Alarm10Activated and !global.Transicao{
+    Alarm10 = Alarm10Time;
+    Alarm10Activated = true;
+}
+if Alarm10 > 0{
+    Alarm10--;
+}
+else if Alarm10Activated and Alarm10 == 0{
+    CriarTransicao(RmMenu);
+    Alarm10 = -1;
 }

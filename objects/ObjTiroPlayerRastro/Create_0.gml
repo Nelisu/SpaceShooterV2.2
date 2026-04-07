@@ -1,0 +1,1 @@
+Cor = c_white;

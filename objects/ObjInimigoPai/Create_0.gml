@@ -47,4 +47,5 @@ PerdeVida = function(_Dano = 1){
     Vida -= _Dano;
     image_xscale = 1.4;
     image_yscale = .6;
+    AtivaHitstop(1)
 }

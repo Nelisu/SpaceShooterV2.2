@@ -1,9 +1,14 @@
+if global.Hitstop exit;
+
 if x > room_width - sprite_width/2 or x < sprite_width/2{
-    hspeed *= -1;
+    Velh *= -1;
 }
 if y > room_height - sprite_height or y < sprite_height{
-    vspeed *= -1;
+    Velv *= -1;
 }
+
+x += Velh;
+y += Velv;
 
 LifeTime ++;
 if LifeTime > Lifespan/10 * 8{
@@ -13,6 +18,6 @@ if Alpha <= 0{
     instance_destroy();
 }
 
-if vspeed > .2 or vspeed < -.2{
-    vspeed = lerp(vspeed, .2 * sign(vspeed), .01);
+if Velv > .2 or Velv < -.2{
+    Velv = lerp(Velv, .2 * sign(Velv), .01);
 }

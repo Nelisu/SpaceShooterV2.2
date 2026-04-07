@@ -1,3 +1,5 @@
+if global.Hitstop exit;
+
 if Iframes > 0{
     Iframes --;
 }
@@ -27,7 +29,11 @@ if _Shield and !instance_exists(ObjEscudo) and Escudo > 0{
    var _Escudo = instance_create_layer(x, y, layer, ObjEscudo);
     Escudo --;
 }
-if _Shoot and alarm[1] == -1{
+if TempoTiro > 0{
+    TempoTiro--;
+}
+
+if _Shoot and TempoTiro <= 0{
     switch (LevelTiro){
     	case 1:
             Tiro1();
@@ -45,7 +51,7 @@ if _Shoot and alarm[1] == -1{
         audio_stop_sound(SndLaser1);
     }
     audio_play_sound(SndLaser1, 1, false);
-    alarm[1] = VelocidadeDisparo;
+    TempoTiro = VelocidadeDisparo;
 }
 
 x += Velh;
@@ -83,5 +89,11 @@ if _Exit{
     //LevelTiro = clamp(LevelTiro, 1, 3);
 //}
 //if keyboard_check_pressed(ord("Q")){
-    //PerdeVida();
+    //AtivaHitstop(1000);
+//}
+//if keyboard_check_pressed(vk_backspace){
+    //instance_destroy();
+//}
+//if keyboard_check_pressed(ord("R")){
+    //room_restart();
 //}

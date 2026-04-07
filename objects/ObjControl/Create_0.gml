@@ -7,7 +7,11 @@ if !audio_is_playing(SndFullOn){
 Waves = [SqInimigo1Arco, SqInimigo1ArcoB];
 WaveIndex = 0;
 Sequence = 0;
-alarm[1] = game_get_speed(gamespeed_fps) * 2;
+Alarm1Time = game_get_speed(gamespeed_fps) * 2;
+Alarm1 = Alarm1Time;
+Alarm10Time = game_get_speed(gamespeed_fps);
+Alarm10 = 0;
+Alarm10Activated = false;
 
 Filhos = [];
 CheckChildren = function(){

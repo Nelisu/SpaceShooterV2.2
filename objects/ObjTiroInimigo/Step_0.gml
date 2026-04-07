@@ -1,4 +1,9 @@
-image_angle = direction + 90;
+if global.Hitstop exit;
+
+image_angle = Dir + 90;
+
+y += Velv;
+x += Velh;
 
 if place_meeting(x, y, ObjEscudo){
     CreateVfx(SprTiroExplosao);

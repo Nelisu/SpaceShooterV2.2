@@ -4,6 +4,8 @@ Lifespan = game_get_speed(gamespeed_fps) * 10;
 LifeTime = 0;
 Alpha = 1;
 Scale = 1;
+Velv = 0;
+Velh = 0;
 
 Tipo = choose(TiposPowerUp.Tiro, TiposPowerUp.Vida);
 Picked = function(){
@@ -16,5 +18,5 @@ Picked = function(){
     instance_destroy();
 }
 var _Multiply = 1; //debug
-vspeed = 2 * _Multiply;
-hspeed = random_range(-.2, .2) * _Multiply;
+Velv = 2 * _Multiply;
+Velh = random_range(-.2, .2) * _Multiply;

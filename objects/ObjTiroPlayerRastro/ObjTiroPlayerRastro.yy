@@ -1,14 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"ObjPlayer",
+  "%Name":"ObjTiroPlayerRastro",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ObjPlayer",
+  "name":"ObjTiroPlayerRastro",
   "overriddenProperties":[],
   "parent":{
     "name":"Player",
@@ -33,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SprNave",
-    "path":"sprites/SprNave/SprNave.yy",
+    "name":"SprTiroNave",
+    "path":"sprites/SprTiroNave/SprTiroNave.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,3 +1,5 @@
+if global.Hitstop exit;
+
 if place_meeting(x, y, ObjEscudo){
     Vida = 0;
     Morte();

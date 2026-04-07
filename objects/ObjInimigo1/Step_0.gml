@@ -1,3 +1,5 @@
+if global.Hitstop exit;
+
 switch (Modo){
     case Modos.Spawn:
         var _Dist = point_distance(0, y, 0, DestY);
@@ -26,12 +28,7 @@ switch (Modo){
                 Velv *= -1;
             }
             
-            if Ataques < 2 and alarm[1] == -1{
-                alarm[1] = game_get_speed(gamespeed_fps) * 2 * random_range(.8, 1.2);
-            }
-            else if Ataques >= 2 and alarm[2] == -1{
-                alarm[2] = game_get_speed(gamespeed_fps);
-            }
+            Ataque();
         }
         else if Funcao == Funcoes.Goleiro{
             //Movimento
@@ -45,12 +42,7 @@ switch (Modo){
                 Velv *= -1;
             }
             
-            if Ataques < 2 and alarm[1] == -1{
-                alarm[1] = game_get_speed(gamespeed_fps) * random_range(.8, 1.2);
-            }
-            else if Ataques >= 2 and alarm[2] == -1{
-                alarm[2] = game_get_speed(gamespeed_fps);
-            }
+            Ataque();
         }
         break;
     
